@@ -35,8 +35,9 @@ A deep blue-black variant — `#0F111A` editor background with a bright cyan acc
 
 ## Credits
 
-Inspired by the Material design color philosophy.
-Created by [Mokammel Tanvir](https://mokammeltanvir.com) · [ByteStackLab](https://bytestacklab.com)
+Color schemes derived from [Material Theme](https://github.com/material-theme) v33.11.0
+(Apache-2.0) by Mattia Astorino and contributors — see [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
+Maintained by [Mokammel Tanvir](https://mokammeltanvir.com) · [ByteStackLab](https://bytestacklab.com)
 
 ## License
 
