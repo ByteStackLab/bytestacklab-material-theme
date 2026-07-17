@@ -5,4 +5,5 @@
 - Initial release
 - ByteStackLab Material Dark variant
 - ByteStackLab Material Ocean variant
+- ByteStackLab Material Light variant
 - Optimized for PHP, Blade, Vue, JavaScript

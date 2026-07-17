@@ -12,8 +12,9 @@ which was released under the Apache License, Version 2.0.
 
 ### Changes made
 
-- Themes renamed to "ByteStackLab Material Dark" (from "Material Theme Darker")
-  and "ByteStackLab Material Ocean" (from "Material Theme Ocean")
+- Themes renamed to "ByteStackLab Material Dark" (from "Material Theme Darker"),
+  "ByteStackLab Material Ocean" (from "Material Theme Ocean") and
+  "ByteStackLab Material Light" (from "Material Theme Lighter")
 - Repackaged as part of the ByteStackLab Material Theme extension
 
 In accordance with Section 4 of the Apache License 2.0, this notice documents
