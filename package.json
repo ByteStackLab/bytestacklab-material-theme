@@ -1,6 +1,6 @@
 {
-  "name": "bytestack-material",
-  "displayName": "ByteStack Material",
+  "name": "bytestacklab-material-theme",
+  "displayName": "ByteStackLab Material Theme",
   "description": "Material-inspired dark themes for VS Code — Dark & Ocean variants. By ByteStackLab.",
   "version": "1.0.0",
   "publisher": "bytestacklab",
@@ -15,7 +15,8 @@
     "material theme",
     "dark theme",
     "ocean",
-    "bytestack"
+    "bytestack",
+    "bytestacklab"
   ],
   "galleryBanner": {
     "color": "#0F111A",
@@ -23,23 +24,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bytestacklab/bytestack-material"
+    "url": "https://github.com/bytestacklab/bytestacklab-material-theme"
   },
   "homepage": "https://bytestacklab.com",
   "bugs": {
-    "url": "https://github.com/bytestacklab/bytestack-material/issues"
+    "url": "https://github.com/bytestacklab/bytestacklab-material-theme/issues"
   },
   "contributes": {
     "themes": [
       {
-        "label": "ByteStack Material Dark",
+        "label": "ByteStackLab Material Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/bytestack-material-dark-color-theme.json"
+        "path": "./themes/bytestacklab-material-dark-color-theme.json"
       },
       {
-        "label": "ByteStack Material Ocean",
+        "label": "ByteStackLab Material Ocean",
         "uiTheme": "vs-dark",
-        "path": "./themes/bytestack-material-ocean-color-theme.json"
+        "path": "./themes/bytestacklab-material-ocean-color-theme.json"
       }
     ]
   }
