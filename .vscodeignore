@@ -1,7 +1,7 @@
 .vscode/**
 .git/**
+.github/**
 .gitignore
 *.vsix
 node_modules/**
-bytestack-material-theme-guide.md
 PUBLISHING.md
