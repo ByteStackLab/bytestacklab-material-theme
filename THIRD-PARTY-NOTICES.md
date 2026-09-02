@@ -13,8 +13,12 @@ which was released under the Apache License, Version 2.0.
 ### Changes made
 
 - Themes renamed to "ByteStackLab Material Dark" (from "Material Theme Darker"),
-  "ByteStackLab Material Ocean" (from "Material Theme Ocean") and
+  "ByteStackLab Material Ocean" (from "Material Theme Ocean"),
   "ByteStackLab Material Light" (from "Material Theme Lighter")
+- "ByteStackLab Material Palenight" is a ByteStackLab-authored derivative palette
+  (purple-tinted UI chrome) built on the same syntax token colors
+- Added semantic highlighting token colors (`semanticTokenColors`) across all
+  variants — original ByteStackLab work, not present in the upstream theme
 - Repackaged as part of the ByteStackLab Material Theme extension
 
 In accordance with Section 4 of the Apache License 2.0, this notice documents

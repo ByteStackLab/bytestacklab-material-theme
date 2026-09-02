@@ -2,7 +2,7 @@
   "name": "bytestacklab-material-theme",
   "displayName": "ByteStackLab Material Theme",
   "description": "Material-inspired themes for VS Code — Dark, Ocean & Light variants. By ByteStackLab.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "bytestacklab",
   "license": "MIT",
   "icon": "images/icon.png",
@@ -16,6 +16,7 @@
     "dark theme",
     "light theme",
     "ocean",
+    "palenight",
     "bytestack",
     "bytestacklab"
   ],
@@ -42,6 +43,11 @@
         "label": "ByteStackLab Material Ocean",
         "uiTheme": "vs-dark",
         "path": "./themes/bytestacklab-material-ocean-color-theme.json"
+      },
+      {
+        "label": "ByteStackLab Material Palenight",
+        "uiTheme": "vs-dark",
+        "path": "./themes/bytestacklab-material-palenight-color-theme.json"
       },
       {
         "label": "ByteStackLab Material Light",

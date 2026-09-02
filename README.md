@@ -1,6 +1,6 @@
 # ByteStackLab Material Theme
 
-Material-inspired themes for VS Code, crafted by ByteStackLab. Optimized for PHP, Laravel Blade, Vue, and JavaScript/TypeScript.
+Material-inspired themes for VS Code, crafted by ByteStackLab. Optimized for PHP, Laravel Blade, Vue, and JavaScript/TypeScript — with semantic highlighting for sharper type-aware syntax colors.
 
 ## Variants
 
@@ -8,22 +8,25 @@ Material-inspired themes for VS Code, crafted by ByteStackLab. Optimized for PHP
 
 A warm, classic Material dark look — `#212121` editor background with a teal accent.
 
-<!-- TODO: add screenshot -->
-<!-- ![Dark](images/screenshot-dark.png) -->
+![Dark](images/screenshot-dark.png)
 
 ### ByteStackLab Material Ocean
 
 A deep blue-black variant — `#0F111A` editor background with a teal accent.
 
-<!-- TODO: add screenshot -->
-<!-- ![Ocean](images/screenshot-ocean.png) -->
+![Ocean](images/screenshot-ocean.png)
+
+### ByteStackLab Material Palenight
+
+A purple-tinted dark variant — `#292D3E` editor background with the same accent palette.
+
+![Palenight](images/screenshot-palenight.png)
 
 ### ByteStackLab Material Light
 
 A clean light variant — `#FAFAFA` editor background with the same Material palette.
 
-<!-- TODO: add screenshot -->
-<!-- ![Light](images/screenshot-light.png) -->
+![Light](images/screenshot-light.png)
 
 ## Installation
 

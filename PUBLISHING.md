@@ -11,31 +11,23 @@
 
 ## বর্তমান অবস্থা (কী কী Ready)
 
-- ✅ ৩টা variant: Dark, Ocean, Light (Apache-2.0 licensed Material Theme v33.11.0 scheme)
+- ✅ ৪টা variant: Dark, Ocean, Palenight, Light (Apache-2.0 licensed Material Theme v33.11.0 scheme)
+- ✅ Semantic highlighting (সব variant এ)
 - ✅ Icon (128x128 PNG, ByteStackLab branding)
 - ✅ README, CHANGELOG, LICENSE, THIRD-PARTY-NOTICES
+- ✅ Screenshots (সব variant এর জন্য `images/screenshot-*.png`)
 - ✅ `.vsix` build + local install test করা
-- ⬜ Screenshots (optional — পরে patch release এও দেওয়া যায়)
 - ⬜ GitHub repo push
 - ⬜ Azure DevOps PAT + Marketplace publisher
+- ⬜ Open VSX Registry account + token (Step 7)
 - ⬜ Publish!
 
 ---
 
-## Step 1: Screenshots (Optional কিন্তু Recommended)
+## Step 1: Screenshots ✅ Done
 
-Marketplace page এ theme এর preview দেখালে install অনেক বেশি হয়।
-
-1. VS Code এ theme select করুন: `Cmd+K Cmd+T` → **ByteStackLab Material Dark**
-2. নিজের একটা সুন্দর code file খুলুন (Laravel controller / Vue component ভালো দেখায়)
-3. Screenshot নিন: `Cmd+Shift+4` → area select করুন
-4. তিনটা variant এর জন্য repeat করে এই নামে `images/` folder এ রাখুন:
-   - `images/screenshot-dark.png`
-   - `images/screenshot-ocean.png`
-   - `images/screenshot-light.png`
-5. `README.md` খুলে screenshot এর `<!-- -->` comment গুলো খুলে দিন
-
-Screenshot ছাড়া publish করলেও সমস্যা নেই — পরে add করে `vsce publish patch` দিলেই হবে।
+`images/screenshot-dark.png`, `screenshot-ocean.png`, `screenshot-palenight.png`,
+`screenshot-light.png` — সব variant এর জন্য রেডি, README এ wired করা আছে।
 
 ---
 
@@ -169,6 +161,36 @@ vsce publish minor
 - `CHANGELOG.md` update করতে ভুলবেন না
 - GitHub এও push করুন: `git push`
 - Users রা automatically update পাবে
+
+---
+
+## Step 7: Open VSX Registry (VSCodium / Cursor / Gitpod users)
+
+VS Code Marketplace এ publish করলেও VSCodium, Cursor, Gitpod এর মতো editor গুলো
+Open VSX থেকে extension নেয় — সেখানে publish না করলে ঐ ইউজাররা miss করবে। বিনামূল্যে extra downloads।
+
+1. https://open-vsx.org এ GitHub দিয়ে login করুন
+2. **Settings → Access Tokens → Generate New Token**
+3. Namespace claim করুন (একবারই): `npx ovsx create-namespace bytestacklab -p <token>`
+4. Publish: `npx ovsx publish -p <token>`
+
+## Step 8: CI দিয়ে Auto-Publish (Optional)
+
+`.github/workflows/publish.yml` already তৈরি করা আছে — এটা `v*` tag push হলে
+automatically Marketplace + Open VSX দুইটাতেই publish করবে। Setup করতে:
+
+1. GitHub repo → **Settings → Secrets and variables → Actions**
+2. দুইটা secret যোগ করুন:
+   - `VSCE_PAT` — Step 3 এর Azure PAT token
+   - `OVSX_TOKEN` — Step 7 এর Open VSX token
+3. Release করতে: `package.json` এ version বাড়িয়ে commit করুন, তারপর:
+   ```bash
+   git tag v1.1.0
+   git push origin v1.1.0
+   ```
+4. GitHub Actions tab এ progress দেখা যাবে — ৫ মিনিটে দুই জায়গাতেই live হয়ে যাবে
+
+এরপর থেকে manual `vsce publish` লাগবে না — শুধু tag push করলেই হবে।
 
 ---
 

@@ -1,6 +1,7 @@
 {
   "name": "ByteStackLab Material Dark",
   "type": "dark",
+  "semanticHighlighting": true,
   "colors": {
     "focusBorder": "#FFFFFF00",
     "foreground": "#EEFFFF",
@@ -216,6 +217,36 @@
     "listFilterWidget.background": "#00000030",
     "listFilterWidget.outline": "#00000030",
     "listFilterWidget.noMatchesOutline": "#00000030"
+  },
+  "semanticTokenColors": {
+    "class": {
+      "foreground": "#FFCB6B"
+    },
+    "interface": {
+      "foreground": "#FFCB6B"
+    },
+    "enum": {
+      "foreground": "#FFCB6B"
+    },
+    "enumMember": {
+      "foreground": "#C3E88D"
+    },
+    "property.readonly": {
+      "foreground": "#FFCB6B"
+    },
+    "variable.readonly": {
+      "foreground": "#FFCB6B"
+    },
+    "decorator": {
+      "foreground": "#82AAFF"
+    },
+    "macro": {
+      "foreground": "#C792EA"
+    },
+    "parameter": {
+      "foreground": "#EEFFFF",
+      "fontStyle": "italic"
+    }
   },
   "tokenColors": [
     {
