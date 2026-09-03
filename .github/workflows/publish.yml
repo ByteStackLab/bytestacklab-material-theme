@@ -43,13 +43,13 @@ jobs:
 
       - name: Publish to Visual Studio Marketplace
         if: steps.check.outputs.release == 'true'
-        run: vsce publish -p "$VSCE_PAT"
+        run: vsce publish --skip-duplicate -p "$VSCE_PAT"
         env:
           VSCE_PAT: ${{ secrets.VSCE_PAT }}
 
       - name: Publish to Open VSX Registry
         if: steps.check.outputs.release == 'true'
-        run: ovsx publish -p "$OVSX_TOKEN"
+        run: ovsx publish --skip-duplicate -p "$OVSX_TOKEN"
         env:
           OVSX_TOKEN: ${{ secrets.OVSX_TOKEN }}
 
